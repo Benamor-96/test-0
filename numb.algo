@@ -1,0 +1,25 @@
+ALGORITHM phrase
+VAR
+nbwords , nbv , nbchar := INTEGER 
+phrase1 := STRING
+BEGIN
+    nbchar := phrase1.length 
+    Read (phrase1)
+    IF (phrase1.length===".") THEN
+    FOR i FROM 0 TO phrase1.length-1 STEP 1  DO
+
+        nbv:=0
+        IF (phrase1[i]="a"or phrase1[i]="e" or phrase1[i]="y" or phrase1[i]="o" or phrase1[i]="i" or phrase1[i]="u" phrase1[i]="A"or phrase1[i]="E" or phrase1[i]="Y" or phrase1[i]="O" or phrase1[i]="I" or phrase1[i]="U") THEN
+            nbv :=nbv+1
+        END_IF
+        nbwords :=1
+        IF (phrase1[i]=" ") THEN
+            nbwords:= nbwords+1
+        END_IF
+    END_FOR
+    wrihte(nbwords)
+    wrihte(nbv)
+    wrihte(nbchar) 
+    END_IF
+
+END
